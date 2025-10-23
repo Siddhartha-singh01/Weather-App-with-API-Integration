@@ -10,7 +10,7 @@ A modern **Weather Application** built using **HTML, CSS, and JavaScript**, inte
 * 🌡️ **Detailed Weather Info** – Displays temperature, humidity, wind speed, and weather conditions.
 * 🎨 **Responsive & Clean UI** – Works perfectly on desktop and mobile.
 * 📡 **Live API Integration** – Uses a public weather API for real-time data fetching.
-* 🌅 **Dynamic Backgrounds / Icons** – Background or icons change based on weather conditions.           
+* 🌅 **Dynamic Backgrounds / Icons** – Background or icons change based on weather conditions.                
 
 ---
 
