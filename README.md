@@ -6,7 +6,7 @@ A modern **Weather Application** built using **HTML, CSS, and JavaScript**, inte
 
 ## 🚀 Features
 
-* 🌍 **Search Weather by City Name** – Get real-time weather info for any location worldwide.
+* 🌍 **Search Weather by City Name** – Get real-time weather info for any location worldwide.                                 
 * 🌡️ **Detailed Weather Info** – Displays temperature, humidity, wind speed, and weather conditions.
 * 🎨 **Responsive & Clean UI** – Works perfectly on desktop and mobile.
 * 📡 **Live API Integration** – Uses a public weather API for real-time data fetching.
