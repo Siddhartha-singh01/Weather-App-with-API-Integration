@@ -1,7 +1,7 @@
 # 🌦️ Weather App with API Integration
 
 A modern **Weather Application** built using **HTML, CSS, and JavaScript**, integrated with a live **Weather API** (like OpenWeatherMap or WeatherAPI) to fetch and display real-time weather data for any city in the world.
-
+    
 ---
 
 ## 🚀 Features         
