@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.Python
+build/
+dist/
+*.egg-info/
+
+# Environment / secrets
+.env
+.venv/
+venv/
+
+# Node/Web (if later added)
+node_modules/
+.parcel-cache/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
