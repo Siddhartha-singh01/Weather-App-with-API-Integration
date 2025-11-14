@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crop Recommendation & Weather Insights</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Crop Recommendation & Weather Insights</h1>
+      <p>Enter a location to get tailored crop recommendations.</p>
+    </header>
+
+    <section class="controls">
+      <form id="query-form">
+        <div class="field">
+          <label for="location">Location</label>
+          <input id="location" type="text" placeholder="City, Country" required />
+          <ul id="suggestions" class="suggestions hidden"></ul>
+        </div>
+        <button type="submit">Get Insights</button>
+      </form>
+      <div id="status" class="status"></div>
+    </section>
+
+    <section class="summary">
+      <div class="card">
+        <h2>Weather Summary</h2>
+        <div class="grid">
+          <div>
+            <div class="metric-label">Average Temp (°C)</div>
+            <div id="avg-temp" class="metric-value">—</div>
+          </div>
+          <div>
+            <div class="metric-label">Total Rain (7d, mm)</div>
+            <div id="total-rain" class="metric-value">—</div>
+          </div>
+          <div>
+            <div class="metric-label">Soil pH (0–5cm)</div>
+            <div id="soil-ph" class="metric-value">—</div>
+          </div>
+        </div>
+        <div id="weather-fallback" class="fallback hidden">
+          <label for="manual-temp">Enter avg temp (°C)</label>
+          <input id="manual-temp" type="number" step="0.1" min="-20" max="50" placeholder="24" />
+          <label for="manual-rain">Enter total rain (mm)</label>
+          <input id="manual-rain" type="number" step="0.1" min="0" max="300" placeholder="80" />
+          <button id="apply-weather">Apply Weather</button>
+          <button id="clear-weather" class="btn-secondary">Clear Weather</button>
+        </div>
+        <div id="soil-ph-fallback" class="fallback hidden">
+          <label for="manual-ph">Enter soil pH (fallback)</label>
+          <input id="manual-ph" type="number" step="0.1" min="3" max="9" placeholder="6.5" />
+          <button id="apply-ph">Apply pH</button>
+          <button id="clear-ph" class="btn-secondary">Clear pH</button>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Rainfall (Next 7 Days)</h2>
+        <canvas id="rainChart"></canvas>
+      </div>
+    </section>
+
+    <section class="recommendations">
+      <div class="card">
+        <h2>Recommended Crops</h2>
+        <ul id="crop-list" class="crop-list"></ul>
+      </div>
+    </section>
+
+    <footer>
+      <small>
+        Weather via backend using OpenWeather One Call. Soil pH from SoilGrids properties API. No keys are stored in the browser.
+      </small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
