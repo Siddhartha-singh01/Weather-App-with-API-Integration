@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 import requests
 from flask_cors import CORS
 
-app = Flask(__name__)
+app = Flask(__name__)                                           
 CORS(app)
 
 OWM_KEY = os.environ.get('OPENWEATHER_API_KEY')
